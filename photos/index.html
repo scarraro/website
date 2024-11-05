@@ -1,0 +1,129 @@
+<!doctype html>
+<html class="scroll-smooth">
+    <head>
+        <title>Sophia's Celebs</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../assets/main.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
+    </head>
+    <body class="bg-purple-200">
+	<!-- Navbar goes here -->
+        <nav class="bg-white shadow-lg">
+			<div class="max-w-100 mx-auto px-4">
+				<div class="flex justify-between">
+					<div class="flex space-x-7 w-full justify justify-between">
+						<div>
+							<!-- Website Logo -->
+							<a href="/" class="flex items-center py-4 px-2">
+								<!-- <img src="../assets/favicon-32x32.png" alt="Logo" class="h-8 w-8 mr-2"> -->
+								<span class="font-semibold text-gray-500 text-lg flex">Sophia's Celebs</span>
+							</a>
+						</div>
+						<!-- Primary Navbar items -->
+						<div class="hidden md:flex items-center space-x-1">
+							<a href="../about/" class="navlink py-4 px-2 text-gray-500 font-semibold hover:text-purple-500 transition duration-300">About</a>
+                            <a href="../photos/" class="navlink py-4 px-2 text-gray-500 font-semibold hover:text-purple-500 transition duration-300">Photos</a>
+							<a href="../contact/" class="navlink py-4 px-2 text-gray-500 font-semibold hover:text-purple-500 transition duration-300">Contact</a>
+						</div>
+
+					</div>
+					<!-- Mobile menu button -->
+					<div class="md:hidden flex items-center">
+						<button class="outline-none mobile-menu-button">
+						<svg class=" w-6 h-6 text-gray-500 hover:text-purple-500 "
+							x-show="!showMenu"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path d="M4 6h16M4 12h16M4 18h16"></path>
+						</svg>
+					</button>
+					</div>
+				</div>
+			</div>
+			<!-- mobile menu -->
+			<div class="md:hidden mobile-menu hidden">
+				<ul class="">
+					<li><a href="../about/" class="block text-sm px-2 py-4 hover:bg-purple-500 transition duration-300">About</a></li>
+					<li class="active"><a href="../photos/" class="block text-sm px-2 py-4 text-white bg-purple-500 font-semibold">Photos</a></li>
+					<li ><a href="../contact/" class="block text-sm px-2 py-4 hover:bg-purple-500 transition duration-300">Contact</a></li>
+				</ul>
+			</div>
+			<script>
+				const btn = document.querySelector("button.mobile-menu-button");
+				const menu = document.querySelector(".mobile-menu");
+
+				btn.addEventListener("click", () => {
+					menu.classList.toggle("hidden");
+				});
+			</script>
+		</nav>
+
+        <!-- Begin main content -->
+        <!-- Photos -->
+        <section class="max-w-7xl mx-auto my-12 py-12">
+            <div class="bg-white lg:shadow hover:shadow-2xl lg:rounded">
+                    <div ID="collage" data-nanogallery2='{
+                        "thumbnailWidth": "400",
+                        "thumbnailHeight": "auto",
+                        "thumbnailLabel": {
+                          "position": "overImageOnBottom",
+                          "display": false
+                        },
+                        "thumbnailAlignment": "center",
+                        "thumbnailOpenImage": true
+                      }'>
+                      <a href="../assets/lover1.jpg" data-ngthumb="../assets/lover1.jpg" data-ngdesc="Lover">Lover</a>
+                      <a href="../assets/19891.jpg" data-ngthumb="../assets/19891.jpg" data-ngdesc="1989">1989</a>
+                      <a href="../assets/evermore1.jpg" data-ngthumb="../assets/evermore1.jpg" data-ngdesc="Evermore">Evermore</a>
+                      <a href="../assets/lover2.jpg" data-ngthumb="../assets/lover2.jpg" data-ngdesc="Lover 2">Lover 2</a>
+                      <a href="../assets/folk1.jpg" data-ngthumb="../assets/folk1.jpg" data-ngdesc="Folklore">Folklore</a>
+                      <a href="../assets/lover3.jpg" data-ngthumb="../assets/lover3.jpg" data-ngdesc="Lover 3">Lover 3</a>
+                      <a href="../assets/rep1.jpg" data-ngthumb="../assets/rep1.jpg" data-ngdesc="Reputation">Reputation</a>
+                      <a href="../assets/Zaza.jpg" data-ngthumb="../assets/Zaza.jpg" data-ngdesc="Lover 4">Lover 4</a>
+                      <a href="../assets/redSuit1.jpg" data-ngthumb="../assets/redSuit1.jpg" data-ngdesc="Lover 4">Red Suit</a>
+                      <a href="../assets/ttpd1.jpg" data-ngthumb="../assets/ttpd1.jpg" data-ngdesc="Lover 4">TTPD</a>
+                
+                    </div>   
+            </div>
+        </section>
+
+        <section class="max-w-7xl mx-auto mb-12">
+            <div class="bg-white lg:shadow lg:rounded">
+                <div class="p-12 text-center">
+                    <h3 class="text-2xl font-bold">Are You Ready For It?</h3>
+                    <p class="py-8 ">Have a question? Feel free to ask, click below to contact us today!</p>
+                    <a href="./contact/" class="mt-4 bg-purple-700 text-white px-5 py-3 font-semibold rounded hover:bg-purple-900 hover:shadow-lg">Contact Us</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Begin Footer -->
+        <section class="bg-white ">
+            <div class="max-w-100 mx-auto px-4">
+                <div class="w-1/2 mx-auto text-center">
+                    <p class="italic py-4">
+                        © 2024 Sophia Carraro | Taylor Swift Impersonator | Bringing the Magic of Taylor to You! 🌟 Travel available worldwide. 
+                        For bookings and inquiries, please contact us. 
+                        Let’s make sparks fly at your next event!
+                    </p>
+                    <!-- <img class="mx-auto pb-6" src="../assets/favicon-32x32.png"> -->
+                </div>
+            </div>
+        </section>
+        
+    </body>
+</html>
